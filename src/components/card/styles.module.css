@@ -1,0 +1,31 @@
+.card{
+    background-color: rgb(73, 73, 73);
+    min-height: 50px;
+    border-radius: 10px;
+    font-size: 22px;
+    color: white;
+    width: 300px;
+}
+
+.icon{
+    color: black;
+    margin: 10px;
+    cursor: pointer;
+    transition: color 0.5s ease 0s;
+}
+
+.icon:hover{
+    color: white;
+}
+
+.title{
+    word-wrap: break-word;
+}
+
+@media (max-width: 1050px) {
+    .card{
+        width: auto;
+        min-width: 150px;
+    }
+  }
+  
