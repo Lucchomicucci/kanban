@@ -10,9 +10,9 @@ interface Props {
 }
 const CardColumn: React.FC<Props> = ({ list, title, handleDelete, handleMove }) => {
   return (
-    <div>
+    <div className={styles.column}>
       <h2 className={styles.title}>{title}</h2>
-      <div className={styles.column}>
+      <div>
         {list.length > 0 ? (
           <>
             {list.map((el, index) => <Card task={el} key={index} handleDelete={handleDelete} handleMove={handleMove} />)}
